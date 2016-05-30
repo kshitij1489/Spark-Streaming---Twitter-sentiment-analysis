@@ -45,14 +45,14 @@ def make_plot(counts):
 	#creating legend with upper left position
 	plt.legend(loc='upper left')
 	plt.show()
-    # YOUR CODE HERE
+    
 
 
 #Read from file and return each line as an element of list
 def load_wordlist(filename):
 	list = [line.rstrip('\n') for line in open(filename)]
 	return list
-    # YOUR CODE HERE
+    
 #Function for creating a stateless form of ReduceByKey operation
 def updateFunction(newValues, runningCount):
     if runningCount is None:
@@ -67,7 +67,7 @@ def stream(ssc, pwords, nwords, duration):
     # Each element of tweets will be the text of a tweet.
     # You need to find the count of all the positive and negative words in these tweets.
     # Keep track of a running total counts and print this at every time step (use the pprint function).
-    # YOUR CODE HERE
+    
 	#creating a list for filtering positive || negative permissible words
     List = pwords + nwords 
 	#changing key value to positive and negative for the RDD.
