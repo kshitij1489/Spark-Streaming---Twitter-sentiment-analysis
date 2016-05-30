@@ -6,7 +6,7 @@ Description:
 * Kafka comes in handy when the data creation rate is more than the processing rate.
 
 Instructions to run:
-
+```
 Start Zookeeper service
 * $ bin/zookeeper-server-start.sh config/zookeeper.properties
 Start kafka service:
@@ -18,3 +18,4 @@ Start downloading tweets from the twitter streaming API and push them to the twi
 * $python twitter_to_kafka.py
 Running the sentiment analysis program
 * $ $SPARK/bin/spark-submit --packages org.apache.spark:spark-streaming-kafka_2.10:1.5.1 twitterStream.py
+```
